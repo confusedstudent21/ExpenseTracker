@@ -94,7 +94,7 @@ namespace ExpenseTracker
             int PP = Int32.Parse(P);
             int QQ = Int32.Parse(Q);
 
-            String AdditionTotal = (AA + BB + CC + DD + EE + FF + GG + HH + II + JJ + KK + LL + MM + NN + OO + PP + QQ).ToString();
+            String AdditionTotal = (QQ - (AA + BB + CC + DD + EE + FF + GG + HH + II + JJ + KK + LL + MM + NN + OO + PP)).ToString();
 
             tb_total.Text = AdditionTotal;
         }
