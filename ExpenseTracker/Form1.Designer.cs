@@ -58,7 +58,7 @@
             this.tb_food = new System.Windows.Forms.TextBox();
             this.tb_entertainment = new System.Windows.Forms.TextBox();
             this.tb_sr = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.tb_travel = new System.Windows.Forms.TextBox();
             this.tb_gifts = new System.Windows.Forms.TextBox();
             this.tb_other = new System.Windows.Forms.TextBox();
             this.lbl_other = new System.Windows.Forms.Label();
@@ -216,6 +216,7 @@
             this.tb_income.Name = "tb_income";
             this.tb_income.Size = new System.Drawing.Size(100, 20);
             this.tb_income.TabIndex = 16;
+            this.tb_income.Text = "0";
             this.tb_income.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // tb_rm
@@ -224,6 +225,7 @@
             this.tb_rm.Name = "tb_rm";
             this.tb_rm.Size = new System.Drawing.Size(100, 20);
             this.tb_rm.TabIndex = 17;
+            this.tb_rm.Text = "0";
             // 
             // tb_electric
             // 
@@ -231,6 +233,7 @@
             this.tb_electric.Name = "tb_electric";
             this.tb_electric.Size = new System.Drawing.Size(100, 20);
             this.tb_electric.TabIndex = 18;
+            this.tb_electric.Text = "0";
             // 
             // tb_hvi
             // 
@@ -238,6 +241,7 @@
             this.tb_hvi.Name = "tb_hvi";
             this.tb_hvi.Size = new System.Drawing.Size(100, 20);
             this.tb_hvi.TabIndex = 19;
+            this.tb_hvi.Text = "0";
             // 
             // tb_water
             // 
@@ -245,6 +249,7 @@
             this.tb_water.Name = "tb_water";
             this.tb_water.Size = new System.Drawing.Size(100, 20);
             this.tb_water.TabIndex = 20;
+            this.tb_water.Text = "0";
             // 
             // tb_ct
             // 
@@ -252,6 +257,7 @@
             this.tb_ct.Name = "tb_ct";
             this.tb_ct.Size = new System.Drawing.Size(100, 20);
             this.tb_ct.TabIndex = 21;
+            this.tb_ct.Text = "0";
             // 
             // tb_mr
             // 
@@ -259,6 +265,7 @@
             this.tb_mr.Name = "tb_mr";
             this.tb_mr.Size = new System.Drawing.Size(100, 20);
             this.tb_mr.TabIndex = 22;
+            this.tb_mr.Text = "0";
             // 
             // tb_pc
             // 
@@ -266,6 +273,7 @@
             this.tb_pc.Name = "tb_pc";
             this.tb_pc.Size = new System.Drawing.Size(100, 20);
             this.tb_pc.TabIndex = 23;
+            this.tb_pc.Text = "0";
             // 
             // tb_cs
             // 
@@ -273,6 +281,7 @@
             this.tb_cs.Name = "tb_cs";
             this.tb_cs.Size = new System.Drawing.Size(100, 20);
             this.tb_cs.TabIndex = 24;
+            this.tb_cs.Text = "0";
             // 
             // tb_parking
             // 
@@ -280,6 +289,7 @@
             this.tb_parking.Name = "tb_parking";
             this.tb_parking.Size = new System.Drawing.Size(100, 20);
             this.tb_parking.TabIndex = 25;
+            this.tb_parking.Text = "0";
             // 
             // tb_fuel
             // 
@@ -287,6 +297,7 @@
             this.tb_fuel.Name = "tb_fuel";
             this.tb_fuel.Size = new System.Drawing.Size(100, 20);
             this.tb_fuel.TabIndex = 26;
+            this.tb_fuel.Text = "0";
             // 
             // tb_food
             // 
@@ -294,6 +305,7 @@
             this.tb_food.Name = "tb_food";
             this.tb_food.Size = new System.Drawing.Size(100, 20);
             this.tb_food.TabIndex = 27;
+            this.tb_food.Text = "0";
             // 
             // tb_entertainment
             // 
@@ -301,6 +313,7 @@
             this.tb_entertainment.Name = "tb_entertainment";
             this.tb_entertainment.Size = new System.Drawing.Size(100, 20);
             this.tb_entertainment.TabIndex = 28;
+            this.tb_entertainment.Text = "0";
             // 
             // tb_sr
             // 
@@ -308,13 +321,16 @@
             this.tb_sr.Name = "tb_sr";
             this.tb_sr.Size = new System.Drawing.Size(100, 20);
             this.tb_sr.TabIndex = 29;
+            this.tb_sr.Text = "0";
+            this.tb_sr.TextChanged += new System.EventHandler(this.tb_sr_TextChanged);
             // 
-            // textBox15
+            // tb_travel
             // 
-            this.textBox15.Location = new System.Drawing.Point(260, 373);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(100, 20);
-            this.textBox15.TabIndex = 30;
+            this.tb_travel.Location = new System.Drawing.Point(260, 373);
+            this.tb_travel.Name = "tb_travel";
+            this.tb_travel.Size = new System.Drawing.Size(100, 20);
+            this.tb_travel.TabIndex = 30;
+            this.tb_travel.Text = "0";
             // 
             // tb_gifts
             // 
@@ -322,6 +338,7 @@
             this.tb_gifts.Name = "tb_gifts";
             this.tb_gifts.Size = new System.Drawing.Size(100, 20);
             this.tb_gifts.TabIndex = 31;
+            this.tb_gifts.Text = "0";
             // 
             // tb_other
             // 
@@ -329,6 +346,7 @@
             this.tb_other.Name = "tb_other";
             this.tb_other.Size = new System.Drawing.Size(100, 20);
             this.tb_other.TabIndex = 32;
+            this.tb_other.Text = "0";
             // 
             // lbl_other
             // 
@@ -345,6 +363,7 @@
             this.tb_total.Name = "tb_total";
             this.tb_total.Size = new System.Drawing.Size(100, 20);
             this.tb_total.TabIndex = 34;
+            this.tb_total.TextChanged += new System.EventHandler(this.tb_total_TextChanged);
             // 
             // lbl_total
             // 
@@ -365,7 +384,7 @@
             this.Controls.Add(this.lbl_other);
             this.Controls.Add(this.tb_other);
             this.Controls.Add(this.tb_gifts);
-            this.Controls.Add(this.textBox15);
+            this.Controls.Add(this.tb_travel);
             this.Controls.Add(this.tb_sr);
             this.Controls.Add(this.tb_entertainment);
             this.Controls.Add(this.tb_food);
@@ -435,7 +454,7 @@
         private System.Windows.Forms.TextBox tb_food;
         private System.Windows.Forms.TextBox tb_entertainment;
         private System.Windows.Forms.TextBox tb_sr;
-        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox tb_travel;
         private System.Windows.Forms.TextBox tb_gifts;
         private System.Windows.Forms.TextBox tb_other;
         private System.Windows.Forms.Label lbl_other;
